@@ -1,0 +1,36 @@
+###
+POST http://localhost:8080/api/content
+Content-type: application/json
+
+ {
+    "id": 3,
+    "title": "My third blog post",
+    "desc": "My third blog post",
+    "status": "IDEA",
+    "contentType": "ARTICLE",
+    "dateCreated": "2023-07-25T17:22:21.1300944",
+    "dateUpdated": "2023-07-25T17:22:21.1300944",
+    "url": "http://localhost:8080/api/content"
+  }
+###
+PUT http://localhost:8080/api/content/1
+Content-type: application/json
+
+{
+   "id": 1,
+  "title": "TRY",
+  "desc": "TRIAL",
+  "status": "IDEA",
+  "contentType": "ARTICLE",
+  "dateCreated": "2023-07-25T17:22:21.1300944",
+  "dateUpdated": "2023-07-25T17:22:10.1300944",
+  "url": "http://localhost:8080/api/content"
+}
+
+###
+GET http://localhost:8080/api/content
+Content-type: application/json
+
+###
+DELETE http://localhost:8080/api/content/3
+Content-type: application/json
